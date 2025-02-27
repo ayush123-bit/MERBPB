@@ -1,6 +1,6 @@
 
 const mongoose = require("mongoose");
-mongoose.connect("mongodb+srv://userayush:1234@cluster0.p7zfp.mongodb.net/Portfolio")
+mongoose.connect("Your_Mongo_URI")
   .then(() => {
     console.log("Connection Successful");
   })
