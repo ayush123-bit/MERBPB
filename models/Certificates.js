@@ -23,6 +23,10 @@ const CertificateSchema = new mongoose.Schema({
   certificateImage: {
     type: String, // Image URL of the certificate
   },
+  priority: {
+    type: Number,
+    default: 0, // Lower number means higher display priority
+  },
 });
 
 module.exports = mongoose.model("Certificate", CertificateSchema);
